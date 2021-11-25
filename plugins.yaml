@@ -1,0 +1,8 @@
+---
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: k8s-external-auth
+config:
+  url: "http://auth-service.default.svc.cluster.local:8080/verify"
+plugin: external-auth
